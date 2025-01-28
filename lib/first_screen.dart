@@ -9,123 +9,87 @@ class FirstScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        bottomNavigationBar: CustomBottomNavigationBar(
+      bottomNavigationBar: CustomBottomNavigationBar(
         iconList: [
-
-        Icons.book,
-
-        Icons.home,
-
-        Icons.person,
+          Icons.book,
+          Icons.home,
+          Icons.person,
         ],
         onChange: (val) {
-      _selectedItem = val;
-    },
-  defaultSelectedIndex: 1,
-  ),
-//  appBar: AppBar(
-//  title: Text("Health App"),
-//  ),
-//      bottomNavigationBar: Row(
-//        children: <Widget>[
-//          Container(
-//            height: 60,
-//            width: MediaQuery.of(context).size.width/3,
-//            decoration: BoxDecoration(
-//              color: Colors.green[200]
-//            ),
-//            child: Icon(Icons.home),
-//          ),
-//          Container(
-//            height: 60,
-//            width: MediaQuery.of(context).size.width/3,
-//            decoration: BoxDecoration(
-//                color: Colors.green[200]
-//            ),
-//            child: Icon(Icons.book),
-//          ),
-//          Container(
-//            height: 60,
-//            width: MediaQuery.of(context).size.width/3,
-//            decoration: BoxDecoration(
-//                color: Colors.green[200]
-//            ),
-//            child: Icon(Icons.person),
-//          ),
-//        ],
-//      ),
-
-  body: Container(
-
-  decoration: BoxDecoration(
-  gradient: LinearGradient(
-  begin: Alignment.topRight,
-  end: Alignment.bottomLeft,
-  colors: [Colors.white70, Colors.white70],
-  ),
-  ),
-  child: Center(
-
-  child: Column(
-
-  mainAxisAlignment: MainAxisAlignment.center,
-  mainAxisSize: MainAxisSize.max,
-  children: <Widget>[
-
-  CircleAvatar(
-  backgroundImage: NetworkImage(
-      imageUrl,
+          _selectedItem = val;
+        },
+        defaultSelectedIndex: 1,
       ),
-  radius: 60,
-  backgroundColor: Colors.transparent,
-  ),
-  SizedBox(height: 40),
-  Text(
-  'Welcome ' + name + '!',
-  style: TextStyle(
-  fontSize: 25,
-  color: Colors.indigo,
-  fontWeight: FontWeight.bold),
-  ),
-  SizedBox(height: 20),
-  Text(
-  'EMAIL',
-  style: TextStyle(
-  fontSize: 15,
-  fontWeight: FontWeight.bold,
-  color: Colors.black54),
-  ),
-  Text(
-  email,
-  style: TextStyle(
-  fontSize: 25,
-  color: Colors.indigo,
-  fontWeight: FontWeight.bold),
-  ),
-  SizedBox(height: 100),
-  RaisedButton(
-  onPressed: () {
-  signOutGoogle();
-  Navigator.of(context).pushAndRemoveUntil(MaterialPageRoute(builder: (context) {return LoginPage();}), ModalRoute.withName('/'));
-  },
-  color: Colors.indigo,
-  child: Padding(
-  padding: const EdgeInsets.all(8.0),
-  child: Text(
-  'Sign Out',
-  style: TextStyle(fontSize: 25, color: Colors.white),
-  ),
-  ),
-  elevation: 5,
-  shape: RoundedRectangleBorder(
-  borderRadius: BorderRadius.circular(40)),
-  )
-  ],
-  ),
-  ),
-  ),
-  );
-}
+      body: Container(
+        decoration: BoxDecoration(
+          gradient: LinearGradient(
+            begin: Alignment.topRight,
+            end: Alignment.bottomLeft,
+            colors: [Colors.white70, Colors.white70],
+          ),
+        ),
+        child: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            mainAxisSize: MainAxisSize.max,
+            children: <Widget>[
+              CircleAvatar(
+                backgroundImage: NetworkImage(
+                  imageUrl,
+                ),
+                radius: 60,
+                backgroundColor: Colors.transparent,
+              ),
+              SizedBox(height: 40),
+              Text(
+                'Welcome ' + name + '!',
+                style: TextStyle(
+                  fontSize: 25,
+                  color: Colors.indigo,
+                  fontWeight: FontWeight.bold
+                ),
+              ),
+              SizedBox(height: 20),
+              Text(
+                'EMAIL',
+                style: TextStyle(
+                  fontSize: 15,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.black54
+                ),
+              ),
+              Text(
+                email,
+                style: TextStyle(
+                  fontSize: 25,
+                  color: Colors.indigo,
+                  fontWeight: FontWeight.bold
+                ),
+              ),
+              SizedBox(height: 100),
+              RaisedButton(
+                onPressed: () {
+                  signOutGoogle();
+                  Navigator.of(context).pushAndRemoveUntil(MaterialPageRoute(builder: (context) {return LoginPage();}), ModalRoute.withName('/'));
+              },
+                color: Colors.indigo,
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Text(
+                    'Sign Out',
+                    style: TextStyle(fontSize: 25, color: Colors.white),
+                  ),
+                ),
+                elevation: 5,
+                shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(40)),
+              )
+            ],
+            ),
+          ),
+        ),
+      );
+    }
 }
 
 
@@ -150,7 +114,6 @@ class _CustomBottomNavigationBarState extends State<CustomBottomNavigationBar> {
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
 
     _selectedIndex = widget.defaultSelectedIndex;

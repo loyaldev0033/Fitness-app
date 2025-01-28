@@ -214,8 +214,6 @@ class _FirstRoute extends State<FirstRoute> {
         elevation: 0,
         backgroundColor: Colors.indigo[500],
       ),
-      //body: new Center(
-      //child: new Text((text)),
       body: Container(
         child: Center(
           child: Column(
@@ -258,7 +256,6 @@ class _FirstRoute extends State<FirstRoute> {
                                         decoration: InputDecoration(
                                             labelText: formVal1,
                                             border: InputBorder.none),
-                                        //hintText: formVal1),
                                         controller: myController1,
                                       ),
                                     ),
@@ -268,7 +265,6 @@ class _FirstRoute extends State<FirstRoute> {
                                         decoration: InputDecoration(
                                             labelText: formVal2,
                                             border: InputBorder.none),
-                                        //hintText: formVal2),
                                         controller: myController2,
                                       ),
                                     ),
@@ -278,7 +274,6 @@ class _FirstRoute extends State<FirstRoute> {
                                         decoration: InputDecoration(
                                             labelText: formVal3,
                                             border: InputBorder.none),
-                                        //hintText: formVal3),
                                         controller: myController3,
                                       ),
                                     ),
@@ -292,7 +287,6 @@ class _FirstRoute extends State<FirstRoute> {
                                               .validate()) {
                                             _formKey.currentState.save();
                                           }
-
                                           createOrSave();
                                           Navigator.pop(context);
                                         },
@@ -309,7 +303,6 @@ class _FirstRoute extends State<FirstRoute> {
                                             _formKey.currentState.save();
                                           }
                                           deleteData();
-
                                           Navigator.pop(context);
                                         },
                                       ),
@@ -324,15 +317,6 @@ class _FirstRoute extends State<FirstRoute> {
                 },
                 child: Text(buttonText),
               ),
-              /*
-              RaisedButton(
-                child: Text(buttonText),
-                onPressed: _changeText,
-                color: Colors.lightBlue,
-                textColor: Colors.white,
-                padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
-                splashColor: Colors.grey,
-              ),*/
             ],
           ),
         ),
