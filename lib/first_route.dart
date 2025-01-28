@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 //import 'package:login_app/sign_in.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-
+//main class
 class FirstRoute extends StatefulWidget {
   @override
   _FirstRoute createState() => new _FirstRoute();
