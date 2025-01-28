@@ -26,7 +26,6 @@ class _FirstRoute extends State<FirstRoute> {
 
   @override
   void dispose() {
-    // Clean up the controller when the widget is disposed.
     myController1.dispose();
     super.dispose();
   }
@@ -64,7 +63,7 @@ class _FirstRoute extends State<FirstRoute> {
     } else {
       createRecord();
     }
-    ; // Count of Documents in Collection
+    ;
   }
 
   void updateData(String coll, String doc, String field, String value) {
@@ -80,7 +79,6 @@ class _FirstRoute extends State<FirstRoute> {
 
   @override
   void saveData() {
-    //text = myController1.text;
 
     updateData(userName + collectionSuffix, myController1.text, formVal2,
         myController2.text);
@@ -115,7 +113,6 @@ class _FirstRoute extends State<FirstRoute> {
         .collection(userName + collectionSuffix)
         .getDocuments()
         .then((QuerySnapshot snapshot) {
-      //snapshot.documents.forEach((f) => print('${f.data.values.elementAt(x)}'));
       snapshot.documents.forEach((f) => val = '${f.data.values.elementAt(1)}' +
           "      " +
           '${f.data.values.elementAt(2)}' +
@@ -125,7 +122,6 @@ class _FirstRoute extends State<FirstRoute> {
           val);
 
       setState(() {
-        //text = "name        dosage       schedule" + '\n' + '\n' + val;
         text = val;
       });
     });

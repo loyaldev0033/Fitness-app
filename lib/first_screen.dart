@@ -80,13 +80,6 @@ class FirstScreen extends StatelessWidget {
   backgroundColor: Colors.transparent,
   ),
   SizedBox(height: 40),
-//  Text(
-//  'NAME',
-//  style: TextStyle(
-//  fontSize: 15,
-//  fontWeight: FontWeight.bold,
-//  color: Colors.black54),
-//  ),
   Text(
   'Welcome ' + name + '!',
   style: TextStyle(
