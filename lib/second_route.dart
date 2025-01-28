@@ -70,18 +70,13 @@ class SecondRoute extends StatelessWidget {
 
               ),
               child: Column(
-
-
                 children: <Widget>[
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: <Widget>[
-
                       Padding(
-
                         padding: const EdgeInsets.only(left: 157),
                         child: Container(
-
                           height: 105,
                           width: 105,
                           decoration: BoxDecoration(
@@ -93,20 +88,15 @@ class SecondRoute extends StatelessWidget {
                                   spreadRadius:2,
                                 )
                               ]
-
                           ),
-
                           child: CircleAvatar(
                             radius: 50,
-
                             backgroundImage: NetworkImage(
                               imageUrl,
                             ),
                           ),
                         ),
                       ),
-
-
                     ],
                   ),
                   SizedBox(height: 20,),
@@ -131,9 +121,7 @@ class SecondRoute extends StatelessWidget {
                                   spreadRadius:1,
                                 )
                               ]
-
                           ),
-
                           child: Padding(
                             padding: const EdgeInsets.all(4.0),
                             child: Column(
@@ -145,9 +133,7 @@ class SecondRoute extends StatelessWidget {
                             ),
                           ),
                         ),
-
                         Container(
-
                           height: 60,
                           width: 60,
                           decoration: BoxDecoration(
@@ -159,9 +145,7 @@ class SecondRoute extends StatelessWidget {
                                   spreadRadius:1,
                                 )
                               ]
-
                           ),
-
                           child: Padding(
                             padding: const EdgeInsets.all(4.5),
                             child: Column(
@@ -173,9 +157,7 @@ class SecondRoute extends StatelessWidget {
                             ),
                           ),
                         ),
-
                         Container(
-
                           height: 60,
                           width: 60,
                           decoration: BoxDecoration(
@@ -187,24 +169,19 @@ class SecondRoute extends StatelessWidget {
                                   spreadRadius:1,
                                 )
                               ]
-
                           ),
-
                           child: Padding(
                             padding: const EdgeInsets.all(4.0),
                             child: Column(
                               children: <Widget>[
-
                                 Icon(Icons.phone, color: Colors.white,),
                                 SizedBox(height: 3,),
                                 Text('Phone', style: TextStyle(color: Colors.white),),
-
                               ],
                             ),
                           ),
                         ),
                         Container(
-
                           height: 60,
                           width: 60,
                           decoration: BoxDecoration(
@@ -216,9 +193,7 @@ class SecondRoute extends StatelessWidget {
                                   spreadRadius:1,
                                 )
                               ]
-
                           ),
-
                           child: Padding(
                             padding: const EdgeInsets.all(4),
                             child: Column(
@@ -231,14 +206,11 @@ class SecondRoute extends StatelessWidget {
                             ),
                           ),
                         )
-
-
                       ],
                     ),
                   ),
                 ],
               ),
-
             ),
             Container(
               padding: EdgeInsets.only(top: 40, right: 34, left: 34),
@@ -250,7 +222,6 @@ class SecondRoute extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: <Widget>[
                         Container(
-
                           height: 60,
                           width: 85,
                           decoration: BoxDecoration(
