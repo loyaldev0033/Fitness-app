@@ -55,7 +55,7 @@ class SecondRoute extends StatelessWidget {
               decoration: BoxDecoration(
                   boxShadow: [
                     BoxShadow(
-                      color: Colors.black.withOpacity(0.7),
+                      color: Colors.black.withOpacity(0.4),
                       blurRadius: 20,
                       spreadRadius: 10,
 
