@@ -7,21 +7,6 @@ class SecondRoute extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-//      bottomNavigationBar: Material(
-//        color: Colors.indigo[500],
-//        shadowColor: Colors.black.withOpacity(0.5),
-//        child: TabBar(
-//          controller: tabController,
-//          indicatorColor: Colors.white,
-//          tabs: <Widget>[
-//            new Tab(icon: Icon(Icons.home, color: Colors.white,),),
-//            new Tab(icon: Icon(Icons.chat, color: Colors.white,),),
-//            new Tab(icon: Icon(Icons.search, color: Colors.white,),),
-//            new Tab(icon: Icon(Icons.group, color: Colors.white,),),
-//            new Tab(icon: Icon(Icons.person, color: Colors.white, size: 40,),)
-//          ],
-//        ),
-//      ),
       appBar: AppBar(
         centerTitle: true,
         title: Text('Profile', style: TextStyle(color: Colors.white),),
